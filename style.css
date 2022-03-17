@@ -59,22 +59,6 @@ a {
     color: #fff
 }
 
-li {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-}
-
-li > p {
-    display: inline-block;
-    margin-left: 7px;
-}
-
-li > a {
-    margin-left: 7px;
-    color: #000;
-}
-
 h2 {
     font-size: 28px;
     font-weight: 900;
@@ -151,6 +135,7 @@ body {
 .aside {
     width: 250px;
     background-color: var(--grey);
+    color: #fff;
 }
 
 .contacts {
@@ -159,20 +144,26 @@ body {
     justify-content: center;
     background-color: var(--lemon);
     padding-bottom: 15px;
+    color: #000;
 }
 
 .aside-title {
-    width: 70%;
     padding: 10px 20px 0 0;
     margin-bottom: 10px;
     align-self: flex-end;
-    border-bottom: 3px solid #000;
+    border-bottom: 3px solid;
+}
+
+.contacts-list {
+    list-style-type: none;
 }
 
 .contacts-item {
     margin: 20px 0 5px 5px;
     font-size: 19px;
     font-weight: 600;
+    display: flex;
+    align-items: center;
 }
 
 .contacts-item > img {
@@ -183,6 +174,42 @@ body {
     color: #8a8a8a;
     transition: 0.3s;
     cursor: pointer;
+}
+
+.contacts-item > p {
+    display: inline-block;
+    margin-left: 7px;
+}
+
+.contacts-item > a {
+    margin-left: 7px;
+    color: #000;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skills-list {
+    margin-left: 15px;
+}
+
+.skills-list {
+    list-style-type: none;
+}
+
+.skills-item {
+    padding-left: 2rem;
+    background-image: url('./assets/icons/star.png');
+    background-position: 0 0;
+    background-size: 1.6rem 1.6rem;
+    background-repeat: no-repeat;
+}
+
+.skills-item {
+    margin: 20px 0 0 0;
 }
 
 .center {
