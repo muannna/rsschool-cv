@@ -1,0 +1,146 @@
+  /* roboto-slab-regular - latin */
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('.assets/fonts/roboto-slab-v22-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('.assets/fonts/roboto-slab-v22-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-slab-600 - latin */
+  @font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+         url('.assets/fonts/roboto-slab-v22-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('.assets/fonts/roboto-slab-v22-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-slab-800 - latin */
+  @font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 800;
+    src: local(''),
+         url('.assets/fonts/roboto-slab-v22-latin-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('.assets/fonts/roboto-slab-v22-latin-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+:root {
+    --grey: #2e2d2d;
+    --lemon: #ffd000;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    height: 100%;
+    background-color: #000;
+    user-select: none;
+}
+
+img {
+    max-width: 100%;
+    width: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #fff
+}
+
+li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+li > p {
+    display: inline-block;
+    margin-left: 7px;
+}
+
+li > a {
+    margin-left: 7px;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Slab', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    color: #fff;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: var(--grey);
+}
+
+.hero {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hero-pic {
+    width: 250px;
+    border-radius: 15px 90px 30px 135px;
+    z-index: 10;
+}
+
+.hero-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: #000;
+}
+
+.hero-name {
+    margin-top: 86px;
+    padding-right: 20px;
+    font-weight: 800;
+    font-size: 46px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: var(--lemon);
+}
+
+.hero-prof {
+    padding-right: 20px;
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: var(--lemon);
+}
+
+.contacts {
+    margin-top: 20px;
+}
