@@ -68,9 +68,111 @@
             </div>
             <div class="center">
                 <div class="about">
-                    <h2 class="about-title">ABOUT ME</h2>
+                    <h2 class="center-title">ABOUT ME</h2>
                     <p class="about-description">I'm a self-motivated and well organized Master of Psychology and ex-rescue worker. <br>I have a great experience in public speaking and coping with stress in extraordinary situations. I am good at solving problems with creative and optimized approaches, fast learning and working in a team.
                         <br> My goal is to gain new professional skills to become a Frontend Developer.</p>
+                </div>
+                <div class="education">
+                    <h2 class="center-title">EDUCATION</h2>
+                    <ul class="edu-list">
+                        <li class="edu-item">Ural State University</li>
+                        <div class="edu-sec">Psychology</div>
+                        <li class="edu-item">Moscow State University</li>
+                        <div class="edu-sec">Psychology</div>
+                        <li class="edu-item">Association of co-experiencing psychotherapy</li>
+                        <div class="edu-sec">Co-experiencing psychotherapist</div>
+                        <li class="edu-item">Ministry of Emergency situations</li>
+                        <div class="edu-sec">Certified rescue worker</div>
+                    </ul>
+                </div>
+                <div class="courses">
+                    <h2 class="center-title">COURSES</h2>
+                    <div class="rss">The Rolling Scopes School</div>
+                    <ul class="courses-list">
+                        <li class="courses-item">
+                            <a href="https://app.rs.school/certificate/0hvii0df">JS / FE Pre-school (1st place)</a>
+                        </li>
+                        <li class="courses-item">
+                            <a href="https://rs.school/js/">JS / FE 2022Q1 (in progress)</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="example">
+                    <h2 class="center-title">CODE EXAMPLE</h2>
+                    <div class="code">
+                        <pre>
+                            <code>
+var whatTimeIsIt = function(angle) {
+  let timeInMinutes = angle * 720 / 360;
+  let hour = Math.floor(timeInMinutes / 60);
+  let minutes = Math.floor(timeInMinutes % 60);
+  if (hour == 0)
+    hour = 12;
+  if (hour <= 9)
+    hour = String('0' + hour);
+  if (minutes <= 9)
+    minutes = String('0' + minutes);
+  return(String(hour) + ':' + String(minutes))
+}
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <div class="experience">
+                    <h2 class="center-title">EXPERIENCE</h2>
+                    <div class="projects">
+                        <a href="https://rolling-scopes-school.github.io/muannna-JSFEPRESCHOOL/portfolio/" class="link">
+                            <img src="./assets/images/1.jpg" alt="Project" class="pic">
+                            <div class="modal unvisible">
+                                <h3 class="modal-title">Photographer's portfolio</h3>
+                                <ul class="modal-list">
+                                    <li class="modal-item">light and dark theme</li>
+                                    <li class="modal-item">two languages</li>
+                                    <li class="modal-item">burger menu</li>
+                                    <li class="modal-item">custom video player</li>
+                                    <li class="modal-item">local storage</li>
+                                    <li class="modal-item">entire adaptive</li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a href="https://rolling-scopes-school.github.io/muannna-JSFEPRESCHOOL/eco-sounds/" class="link">
+                            <img src="./assets/images/2.jpg" alt="Project" class="pic">
+                            <div class="modal unvisible">
+                                <h3 class="modal-title">Eco-sounds</h3>
+                                <ul class="modal-list">
+                                    <li class="modal-item">7 relaxing sounds</li>
+                                    <li class="modal-item">custom volume slider</li>
+                                    <li class="modal-item">entire adaptive</li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a href="https://rolling-scopes-school.github.io/muannna-JSFEPRESCHOOL/movie-app/" class="link">
+                            <img src="./assets/images/3.jpg" alt="Project" class="pic">
+                            <div class="modal unvisible">
+                                <h3 class="modal-title">Movie API</h3>
+                                <ul class="modal-list">
+                                    <li class="modal-item">IMDB API</li>
+                                    <li class="modal-item">search through IMDB library</li>
+                                    <li class="modal-item">individual movie card with extended info</li>
+                                    <li class="modal-item">entire adaptive</li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a href="https://rolling-scopes-school.github.io/muannna-JSFEPRESCHOOL/rick-and-morty/" class="link">
+                            <img src="./assets/images/4.jpg" alt="Project" class="pic">
+                            <div class="modal unvisible">
+                                <h3 class="modal-title">Rick and Morty game</h3>
+                                <ul class="modal-list">
+                                    <li class="modal-item">arcade game</li>
+                                    <li class="modal-item">lives and score counter</li>
+                                    <li class="modal-item">score table</li>
+                                    <li class="modal-item">local storage</li>
+                                    <li class="modal-item">epic sounds</li>
+                                    <li class="modal-item">much fun!</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -78,5 +180,6 @@
     <footer class="footer">
         <div class="container"></div>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>
