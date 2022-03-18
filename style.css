@@ -84,7 +84,6 @@ body {
 }
 
 .hero {
-    margin-top: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -92,7 +91,7 @@ body {
 
 .hero-pic {
     width: 250px;
-    border-radius: 0 90px 0 135px;
+    border-radius: 0 0 0 135px;
     z-index: 10;
 }
 
