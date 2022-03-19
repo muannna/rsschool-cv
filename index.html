@@ -76,13 +76,13 @@
                     <h2 class="center-title">EDUCATION</h2>
                     <ul class="edu-list">
                         <li class="edu-item">Ural State University</li>
-                        <div class="edu-sec">Psychology</div>
+                        <li class="edu-sec">Psychology</li>
                         <li class="edu-item">Moscow State University</li>
-                        <div class="edu-sec">Psychology</div>
+                        <li class="edu-sec">Psychology</li>
                         <li class="edu-item">Association of co-experiencing psychotherapy</li>
-                        <div class="edu-sec">Co-experiencing psychotherapist</div>
+                        <li class="edu-sec">Co-experiencing psychotherapist</li>
                         <li class="edu-item">Ministry of Emergency situations</li>
-                        <div class="edu-sec">Certified rescue worker</div>
+                        <li class="edu-sec">Certified rescue worker</li>
                     </ul>
                 </div>
                 <div class="courses">
@@ -108,9 +108,9 @@ var whatTimeIsIt = function(angle) {
   let minutes = Math.floor(timeInMinutes % 60);
   if (hour == 0)
     hour = 12;
-  if (hour <= 9)
+  if (hour &lt;= 9)
     hour = String('0' + hour);
-  if (minutes <= 9)
+  if (minutes &lt;= 9)
     minutes = String('0' + minutes);
   return(String(hour) + ':' + String(minutes))
 }
