@@ -444,6 +444,10 @@ body {
 }
 
 @media(max-width: 1000px) {
+    .body {
+        flex-wrap: wrap;
+    }
+    
     .container {
         max-width: 750px;
     }
@@ -454,6 +458,10 @@ body {
 
     .hero-info {
         max-width: 750px;
+    }
+
+    .hero-name {
+        font-size: 35px;
     }
 
     .container-main {
@@ -470,5 +478,35 @@ body {
 
     .center {
         max-width: 750px;
+    }
+}
+
+@media (max-width: 748px) {
+    .header {
+        max-width: 100%;
+    }
+
+    .hero-info {
+        max-width: 75%;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .aside {
+        min-width: 207px;
+    }
+
+    .center {
+        max-width: 75%;
+    }
+
+    .footer {
+        max-width: 100%;
+    }
+
+    h2 {
+        font-size: 22px;
     }
 }
